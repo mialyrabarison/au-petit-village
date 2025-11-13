@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Astérix",
+    "price": 39.9,
+    "image": "assets/img/asterix.jpg",
+    "description": "Symbole du courage et de la malice gauloise, cette figurine d’Astérix est façonnée à la main dans notre atelier. Chaque détail, du casque ailé à la moustache fière, rappelle le héros intrépide de la bande dessinée culte. Réalisée en résine artisanale et peinte avec soin, elle incarne l’esprit du petit village qui résiste encore et toujours à l’envahisseur !."
+  },
+  {
+    "id": 2,
+    "name": "Obélix",
+    "price": 49.9,
+    "image": "assets/img/obelix.jpg",
+    "description": "Fidèle compagnon d’Astérix et livreur de menhirs hors pair, Obélix incarne la force tranquille et le cœur tendre du village. Cette figurine, sculptée à la main avec une attention particulière aux détails, célèbre son allure imposante et son célèbre pantalon rayé bleu et blanc. Réalisée en résine artisanale et minutieusement peinte, elle capture toute la bonhomie et la puissance du géant au grand cœur qui ne quitte jamais son fidèle menhir."
+  },
+  {
+    "id": 3,
+    "name": "Idéfix",
+    "price": 19.9,
+    "image": "assets/img/idefix.jpg",
+    "description": "Petit chien au grand courage, Idéfix est le fidèle compagnon d’Obélix et le gardien de la forêt. Cette figurine, réalisée à la main avec tendresse et précision, met en valeur son regard malicieux et son pelage soyeux. Façonnée en résine et minutieusement peinte, elle capture toute la personnalité attachante de ce petit héros au grand cœur, toujours prêt à défendre la nature et à suivre ses amis dans toutes leurs aventures."
+  },
+  {
+    "id": 4,
+    "name": "Panoramix",
+    "price": 59.9,
+    "image": "assets/img/panoramix.jpg",
+    "description": "Sage druide du village, Panoramix est le gardien du secret de la potion magique et le symbole de la sagesse gauloise. Cette figurine, sculptée à la main dans notre atelier, met en valeur son calme légendaire, son chaudron doré et sa longue barbe blanche. Réalisée en résine artisanale et peinte avec soin, elle évoque toute la sérénité et la bienveillance du druide qui veille sur les habitants du petit village résistant encore et toujours à l’envahisseur."
+  }
+]
+

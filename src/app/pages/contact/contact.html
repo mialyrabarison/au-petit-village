@@ -1,0 +1,25 @@
+<h1>Contact</h1>
+<p>N’hésitez pas à nous écrire.</p>
+
+<form (ngSubmit)="onSubmit()" #f="ngForm" class="form">
+  <label>
+    Nom
+    <input name="name" [(ngModel)]="model.name" required>
+  </label>
+
+  <label>
+    Email
+    <input name="email" type="email" [(ngModel)]="model.email" required>
+  </label>
+
+  <label>
+    Message
+    <textarea name="message" rows="5" [(ngModel)]="model.message" required></textarea>
+  </label>
+
+  <button type="submit" [disabled]="f.invalid">Envoyer</button>
+</form>
+
+<p *ngIf="submitted" class="ok">
+  ✅ Merci ! Votre message a été envoyé (simulation).
+</p>

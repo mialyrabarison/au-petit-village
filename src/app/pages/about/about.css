@@ -1,0 +1,28 @@
+h1 { margin: 16px 0; }
+
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--ink);
+  margin-bottom: 25px;
+}
+
+.village {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.gaulois {
+  color: var(--yellow);
+  font-weight: 600;
+}

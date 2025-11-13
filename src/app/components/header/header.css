@@ -1,0 +1,52 @@
+/* === HEADER (fond jaune) === */
+header {
+  background-color: #FDD90B;   /* jaune vif */
+  padding: 1rem 2rem;
+}
+
+/* === NAV CONTENU === */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;           /* élargi (avant: 1000px) */
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* === LOGO === */
+header .logo {
+  margin-right: auto;          /* pousse le menu à droite */
+  font-weight: 800;
+  color: var(--ink);
+}
+header .logo img {
+  height: 140px;               /* ta valeur actuelle */
+  width: auto;
+  vertical-align: middle;
+}
+
+/* === LIENS DU MENU === */
+header nav a {
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+header nav a.active {
+  color: #DA001E;              /* rouge actif */
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+/* survol */
+header nav a:hover {
+  background: rgba(0,0,0,0.06);
+  color: var(--ink);
+  text-decoration: none;
+}

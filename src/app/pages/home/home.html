@@ -1,0 +1,38 @@
+<section class="presentation">
+<h1>Là où les héros gaulois reprennent vie !</h1>
+<p class="intro">
+  <span class="village">Au Petit Village</span>, un atelier artisanal passionné où prennent vie les héros intemporels 
+  d’<span class="gaulois">Astérix</span> et <span class="gaulois">Obélix</span>. 
+  Chaque figurine est minutieusement confectionnée à la main, mêlant 
+  savoir-faire traditionnel et clin d’œil à la bande dessinée culte. 
+  Pensées pour les amoureux d’humour gaulois et de nostalgie, nos créations s’adressent 
+  à une génération de trentenaires à quinquagénaires qui ont grandi avec les aventures 
+  d’<span class="gaulois">Astérix</span>, <span class="gaulois">Obélix</span> et leurs <span class="gaulois">compagnons</span>. 
+  Retrouvez, à travers chaque pièce, l’esprit joyeux, courageux et un brin irrévérencieux 
+  de ce petit village qui résiste encore et toujours à l’envahisseur !
+</p>
+</section>
+
+<!-- Outils : recherche + tri -->
+<section class="tools">
+  <input type="text"
+         [(ngModel)]="searchTerm"
+         placeholder="Rechercher par nom..."
+         aria-label="Rechercher par nom">
+
+  <select [(ngModel)]="sortOrder" aria-label="Trier par prix">
+    <option value="">— Tri par prix —</option>
+    <option value="asc">Prix croissant</option>
+    <option value="desc">Prix décroissant</option>
+  </select>
+</section>
+
+<!-- Catalogue -->
+<section class="grid">
+  <article *ngFor="let p of products | filterByName:searchTerm | sortByPrice:sortOrder">
+    <img [src]="p.image" [alt]="p.name" width="150">
+    <h3>{{ p.name }}</h3>
+    <p>{{ p.price | currency:'EUR':'symbol':'1.2-2' }}</p>
+    <a [routerLink]="['/product', p.id]">Voir la fiche</a>
+  </article>
+</section>

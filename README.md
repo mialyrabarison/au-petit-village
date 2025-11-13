@@ -1,59 +1,135 @@
-# AuPetitVillage
+Au Petit Village – Catalogue de Figurines (Angular 17)
+Projet Angular réalisé dans le cadre de la formation CEF – Devoir « Au Petit Village »
+Ce site présente un catalogue de figurines artisanales inspirées de la bande dessinée Astérix & Obélix, destiné à une clientèle de 30–55 ans, nostalgique de l’univers des Gaulois.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+A.	 Objectifs du projet
+Ce projet met en application les compétences Angular suivantes :
+•	Standalone Components (Angular 17)
+•	Routing (navigation entre pages)
+•	Pipes personnalisés
+•	Services + requêtes HTTP simulées
+•	Gestion des assets (images, favicon, logo)
+•	Affichage dynamique via *ngFor
+•	Interaction utilisateur : recherche + tri
 
-## Development server
+B.	 Stack technique
+•	Angular 17
+•	TypeScript
+•	HTML5 / CSS3
+•	Pipes et Services Angular
 
-To start a local development server, run:
+C.	Structure du projet
+AU-PETIT-VILLAGE
+├── .angular/
+├── .git/
+├── .vscode/
+├── node_modules/
+├── public/
+│ └── favicon.ico
+│
+├── src/
+│ ├── app/
+│ │ ├── components/
+│ │ │ ├── footer/
+│ │ │ │ ├── footer.css
+│ │ │ │ ├── footer.html
+│ │ │ │ └── footer.ts
+│ │ │ └── header/
+│ │ │ ├── header.css
+│ │ │ ├── header.html
+│ │ │  └ ── header.ts
+│ │ │
+│ │ ├── pages/
+│ │ │ ├── about/
+│ │ │ │ ├── about.css
+│ │ │ │ ├── about.html
+│ │ │ │ └── about.ts
+│ │ │ ├── contact/
+│ │ │ ├── home/
+│ │ │ └── product/
+│ │ │
+│ │ ├── pipes/
+│ │ │ ├── filter-by-name-pipe.ts
+│ │ │ └── sort-by-price-pipe.ts
+│ │ │
+│ │ ├── services/
+│ │ │ ├── app.config.ts
+│ │ │ ├── app.routes.ts
+│ │ │ ├── app.css
+│ │ │ ├── app.html
+│ │ │ └── app.ts
+│ │
+│ ├── assets/
+│ ├── index.html
+│ ├── main.ts
+│ ├── styles.css
+│ └── .editorconfig
+│
+├── angular.json
+├── arborescence.txt
+├── package-lock.json
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
+D.	Pages et fonctionnalités
 
-```bash
-ng serve
-```
+1.	Accueil (/)
+-	Présentation de l’entreprise
+-	Catalogue complet des figurines (Astérix, Obélix, Idéfix, Panoramix)
+-	Recherche par nom (Pipe filterByName)
+-	Tri par prix croissant / décroissant (Pipe sortByPrice)
+-	Carte produit : image, nom, prix, lien “Voir la fiche”
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2.	 Fiche produit (/product/:id)
+Affichage dynamique d’un produit selon son ID :
+-	Image en grand
+-	Nom
+-	Prix
+-	Description détaillée
+-	Lien “Retour à l’accueil”
 
-## Code scaffolding
+3.	 À propos (/about)
+-	Présentation de l’atelier "Au Petit Village"
+-	Démarche artisanale
+-	Cible : 30–55 ans, nostalgiques des aventures gauloises
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+4.	Contact (/contact)
+•	formulaire 
+•	Page accessible depuis le menu
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+E.	Installation
+1. Prérequis
+-	Node.js (version LTS)
+-	Angular CLI :
+                 npm install -g @angular/cli
 
-```bash
-ng generate --help
-```
+2. Installation du projet
+npm install
+3. Lancement en local
+ng serve --open
+→ Application accessible sur :
+http://localhost:4200/
 
-## Building
+F.	Identité graphique
+Identité graphique
+•	Couleurs :
+-	Sable #F9D0A3
+-	Jaune #FDD90B
+-	Rouge #DA001E
+-	Encre #151217
+•	Polices :
+-	Bubbleboddy Neue (titres / menu)
+-	Comfortaa (texte)
+•	Logo intégré : assets/img/logo.png
+•	Favicon personnalisé : favicon.ico
 
-To build the project run:
+G.	Données produits
+•	Les figurines sont stockées dans :
+src/assets/products.json
 
-```bash
-ng build
-```
+Auteur
+Projet réalisé par Mialy RABARISON
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

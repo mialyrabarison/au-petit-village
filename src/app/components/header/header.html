@@ -1,0 +1,25 @@
+<header>
+  <nav class="nav">
+    <!-- Logo -->
+    <a routerLink="/" class="logo"
+       routerLinkActive="active"
+       [routerLinkActiveOptions]="{ exact:true }">
+      <img src="assets/img/logo.png" alt="Au Petit Village" height="60">
+    </a>
+
+    <!-- Liens de navigation -->
+    <a routerLink="/"
+       routerLinkActive="active"
+       [routerLinkActiveOptions]="{ exact:true }">
+       Accueil
+    </a>
+
+    <a routerLink="/about" routerLinkActive="active">
+      À propos
+    </a>
+
+    <a routerLink="/contact" routerLinkActive="active">
+      Contact
+    </a>
+  </nav>
+</header>

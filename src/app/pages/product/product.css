@@ -1,0 +1,59 @@
+h1 { margin: 16px 0; }
+.card{ max-width:720px; margin:16px auto; padding:18px; border:1px solid #eee; border-radius:14px; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+.card img{ display:block; margin:10px auto 14px; border-radius:12px; }
+.price{ font-size:1.2rem; font-weight:700; color:var(--ink); background:var(--yellow); display:inline-block; padding:4px 10px; border-radius:10px; }
+.desc{ color:#333; line-height:1.5; }
+.card a{ color:#fff; background:var(--red); padding:6px 10px; border-radius:10px; display:inline-block; margin-top:8px; }
+
+.fiche-produit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* permet de bien s’adapter sur petits écrans */
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.fiche-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.fiche-image img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fiche-texte {
+  flex: 1 1 400px;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.price {
+  background: var(--yellow);
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.fiche-texte h1 {
+  margin-bottom: 10px;
+}
+
+.fiche-texte a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.fiche-texte a:hover {
+  text-decoration: underline;
+}

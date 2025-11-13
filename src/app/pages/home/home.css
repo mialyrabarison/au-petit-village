@@ -1,0 +1,105 @@
+/* Outils : recherche + tri */
+.tools {
+  display: flex;
+  gap: 12px;
+  margin: 14px 0 18px;
+}
+.tools input,
+.tools select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+.tools select { background: #fff; }
+
+/* --- Grille du catalogue --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;                 /* plus d’espace entre les cartes */
+  justify-items: center;
+  margin: 30px auto;
+  width: 100%;               /* occupe toute la largeur disponible */
+  max-width: 1400px;         /* garde une limite élégante */
+}
+
+/* --- Carte produit --- */
+.grid article {
+  display: flex;                   /* nécessaire pour le centrage */
+  flex-direction: column;
+  align-items: center;             /* centre horizontalement tout le contenu */
+  text-align: center;              /* centre les textes */
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  background: #fff;
+}
+
+/* Image */
+.grid article img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+/* Titre / prix */
+.grid article h3 { margin: 6px 0; }
+.grid article p  { margin: 4px 0; }
+
+/* Bouton “Voir la fiche” — centré */
+.grid article a {
+  display: inline-block;
+  margin-top: 10px;
+  align-self: center;              /* garde le bouton centré dans la carte */
+  background: var(--red);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.grid article a:hover {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.presentation {
+  max-width: 900px;          /* évite que le texte s’étale trop large */
+  margin: 40px auto;         /* centre et ajoute de l’espace autour */
+  padding: 0 20px;           /* espace intérieur gauche/droite */
+  line-height: 1.7;          /* espace entre les lignes */
+  font-size: 1.2rem;         /* taille agréable à lire */
+  text-align: justify;       /* texte bien aligné sur les bords */
+  color: var(--ink);
+}
+
+h1 {
+  text-align: center;        /* ✅ centre ton titre */
+  font-size: 2.5rem;         /* taille agréable et visible */
+  margin: 30px 0 10px;       /* espace autour du titre */
+  color: var(--ink);         /* couleur du texte */
+  line-height: 1.4;          /* aération entre les lignes */
+}
+
+.intro {
+  max-width: 900px;
+  margin: 20px auto;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: var(--ink);
+}
+
+/* Rouge et gras pour le nom de la marque */
+.village {
+  color: var(--red);        /* ton rouge #DA001E */
+  font-weight: 700;
+}
+
+/* Jaune pour Astérix et Obélix */
+.gaulois {
+  color: var(--yellow);     /* ton jaune vif #FDD90B */
+  font-weight: 600;
+}

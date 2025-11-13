@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --sand:#F9D0A3;
+  --yellow:#FDD90B;
+  --ink:#151217;   /* texte principal */
+  --red:#DA001E;   /* actions/accent */
+}
+
+/* === Polices === */
+@font-face{
+  font-family: "Bubbleboddy Neue";
+  src: 
+       url("/assets/fonts/bubbleboddyNeue-Regular.ttf?v=2") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Comfortaa";
+  src: url("/assets/fonts/Comfortaa-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Base === */
+html, body{
+  margin:0;
+  font-family: "Comfortaa", system-ui, Arial, sans-serif; /* texte par défaut */
+  color: var(--ink);
+  background:#fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Titres + menu en Bubbleboddy */
+h1, h2, h3, .nav a{
+  font-family: "Bubbleboddy Neue", sans-serif;
+}
+
+/* Titres */
+h1 { font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1.15; letter-spacing: .2px; }
+h2 { line-height: 1.2; letter-spacing: .2px; }
+
+/* Menu */
+.nav a { font-weight: 700; letter-spacing: .2px; }
+
+/* Noms produits */
+.card h3, .product-name { font-family: "Bubbleboddy Neue", sans-serif; letter-spacing: .2px; }
+
+/* Liens / layout / boutons */
+a{ color:var(--red); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+main {
+  max-width: 1400px;     /* plus large */
+  margin: 0 auto;
+  padding: 20px 40px;    /* plus d’air sur les côtés */
+}
+
+h1,h2,h3{ margin:12px 0; color:var(--ink); }
+button{ background:var(--red); color:#fff; border:none; padding:8px 14px; border-radius:10px; cursor:pointer; }
+button:hover{ filter:brightness(0.95); }
+
+
+/* Test temporaire */
+.nav a, h1, h2, h3 {
+  font-family: "Bubbleboddy Neue", sans-serif !important;
+}
+
+
+
+
