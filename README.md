@@ -2,6 +2,31 @@ Au Petit Village – Catalogue de Figurines (Angular 17)
 Projet Angular réalisé dans le cadre de la formation CEF – Devoir « Au Petit Village »
 Ce site présente un catalogue de figurines artisanales inspirées de la bande dessinée Astérix & Obélix, destiné à une clientèle de 30–55 ans, nostalgique de l’univers des Gaulois.
 
+## 📸 Aperçu du site
+
+### 🏠 Page d'accueil
+![Accueil](./screenshots/home.png)
+
+### ℹ️ Page À propos
+![À propos](./screenshots/about.png)
+
+### 🧾 Fiche produit Astérix
+![Fiche produit Astérix](./screenshots/product-asterix.png)
+
+### 🧾 Fiche produit Obélix
+![Fiche produit Obélix](./screenshots/product-obélix.png)
+
+### 🧾 Fiche produit Idéfix
+![Fiche produit Idéfix](./screenshots/product-idéfix.png)
+
+### 🧾 Fiche produit Panoramix
+![Fiche produit Panoramix](./screenshots/product-panoramix.png)
+
+
+### 📬 Page Contact
+![Contact](./screenshots/contact.png)
+
+
 A.	 Objectifs du projet
 Ce projet met en application les compétences Angular suivantes :
 •	Standalone Components (Angular 17)
@@ -19,60 +44,64 @@ B.	 Stack technique
 •	Pipes et Services Angular
 
 C.	Structure du projet
-AU-PETIT-VILLAGE
-├── .angular/
-├── .git/
-├── .vscode/
-├── node_modules/
-├── public/
-│ └── favicon.ico
-│
+
+## 📁 Arborescence du projet
+
+
+Voici la structure principale du projet Angular :
+au-petit-village/
+au-petit-village/
 ├── src/
-│ ├── app/
-│ │ ├── components/
-│ │ │ ├── footer/
-│ │ │ │ ├── footer.css
-│ │ │ │ ├── footer.html
-│ │ │ │ └── footer.ts
-│ │ │ └── header/
-│ │ │ ├── header.css
-│ │ │ ├── header.html
-│ │ │  └ ── header.ts
-│ │ │
-│ │ ├── pages/
-│ │ │ ├── about/
-│ │ │ │ ├── about.css
-│ │ │ │ ├── about.html
-│ │ │ │ └── about.ts
-│ │ │ ├── contact/
-│ │ │ ├── home/
-│ │ │ └── product/
-│ │ │
-│ │ ├── pipes/
-│ │ │ ├── filter-by-name-pipe.ts
-│ │ │ └── sort-by-price-pipe.ts
-│ │ │
-│ │ ├── services/
-│ │ │ ├── app.config.ts
-│ │ │ ├── app.routes.ts
-│ │ │ ├── app.css
-│ │ │ ├── app.html
-│ │ │ └── app.ts
-│ │
-│ ├── assets/
-│ ├── index.html
-│ ├── main.ts
-│ ├── styles.css
-│ └── .editorconfig
-│
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── header/
+│   │   │   │   ├── header.html
+│   │   │   │   ├── header.css
+│   │   │   │   └── header.ts
+│   │   │   ├── footer/
+│   │   │   │   ├── footer.html
+│   │   │   │   ├── footer.css
+│   │   │   │   └── footer.ts
+│   │   ├── pages/
+│   │   │   ├── home/
+│   │   │   │   ├── home.html
+│   │   │   │   ├── home.css
+│   │   │   │   └── home.ts
+│   │   │   ├── about/
+│   │   │   │   ├── about.html
+│   │   │   │   ├── about.css
+│   │   │   │   └── about.ts
+│   │   │   ├── contact/
+│   │   │   └── product/
+│   ├── assets/
+│   │   ├── img/
+│   │   │   ├── asterix.jpg
+│   │   │   ├── obelix.jpg
+│   │   │   ├── idefix.jpg
+│   │   │   ├── panoramix.jpg
+│   │   └── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── styles.css
 ├── angular.json
-├── arborescence.txt
-├── package-lock.json
 ├── package.json
-├── README.md
-├── tsconfig.app.json
 ├── tsconfig.json
-└── tsconfig.spec.json
+├── README.md
+└── screenshots/
+    ├── home.png
+    ├── about.png
+    ├── catalogue.png
+    ├── contact.png
+    ├── product-asterix.png
+    ├── product-obelix.png
+    ├── product-idefix.png
+    └── product-panoramix.png
+
+
+*(FIN DU CODE)*
+
+---
+
 D.	Pages et fonctionnalités
 
 1.	Accueil (/)
